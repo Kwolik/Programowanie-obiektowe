@@ -1,0 +1,15 @@
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\kalkulator.csprojAssemblyReference.cache
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\App.g.cs
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\kalkulator_MarkupCompile.cache
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\bin\Debug\kalkulator.exe.config
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\bin\Debug\kalkulator.exe
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\bin\Debug\kalkulator.pdb
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\MainWindow.g.cs
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\kalkulator_MarkupCompile.lref
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\MainWindow.baml
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\kalkulator.g.resources
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\kalkulator.Properties.Resources.resources
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\kalkulator.csproj.GenerateResource.cache
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\kalkulator.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\kalkulator.exe
+D:\Microsoft Visual Studio\projekty\kalkulator\kalkulator\obj\Debug\kalkulator.pdb

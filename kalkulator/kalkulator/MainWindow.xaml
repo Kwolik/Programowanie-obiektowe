@@ -1,0 +1,87 @@
+﻿<Window x:Class="kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kalkulator"
+        mc:Ignorable="d"
+        Title="Kalkulator Robert Kwoll gr B" Height="655" Width="735">
+    <Grid Background="Black" DockPanel.Dock="Right">
+
+        <Grid.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="BorderBrush" Value="#9e9fe1" />
+                    <Setter Property="Background" Value="#20223E" />
+                    <Setter Property="Margin" Value="0"/>
+                    <Setter Property="FontSize" Value="35"/>
+                    <Setter Property="Foreground" Value="#F3F3E2"/>
+                    <Setter Property="Tag" Value="button"/>
+                </Style>
+
+        </Grid.Resources>
+
+        <Grid.RowDefinitions>
+                <RowDefinition Height="10"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="10"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Content="1" x:Name="Button_1" Grid.Column="1" Grid.Row="5" Click="buttonClick_numbers"/>
+        <Button Content="2" x:Name="Button_2" Grid.Column="2" Grid.Row="5" Click="buttonClick_numbers"/>
+        <Button Content="3" x:Name="Button_3" Grid.Column="3" Grid.Row="5" Click="buttonClick_numbers"/>
+        <Button Content="4" x:Name="Button_4" Grid.Column="1" Grid.Row="4" Click="buttonClick_numbers"/>
+        <Button Content="5" x:Name="Button_5" Grid.Column="2" Grid.Row="4" Click="buttonClick_numbers"/>
+        <Button Content="6" x:Name="Button_6" Grid.Column="3" Grid.Row="4" Click="buttonClick_numbers"/>
+        <Button Content="7" x:Name="Button_7" Grid.Column="1" Grid.Row="3" Click="buttonClick_numbers"/>
+        <Button Content="8" x:Name="Button_8" Grid.Column="2" Grid.Row="3" Click="buttonClick_numbers"/>
+        <Button Content="9" x:Name="Button_9" Grid.Column="3" Grid.Row="3" Click="buttonClick_numbers"/>
+
+        <Button Content="±" x:Name="Button_Opp"   Grid.Column="1" Grid.Row="6" Click="buttonClick_Opp"/>
+        <Button Content="0" x:Name="Button_0"     Grid.Column="2" Grid.Row="6" Click="buttonClick_numbers"/>
+        <Button Content="," x:Name="Button_Comma" Grid.Column="3" Grid.Row="6" Click="buttonClick_Comma"/>
+
+        <Button Content="+" x:Name="Button_Plus"   Grid.Column="4" Grid.Row="6" Background="#282bb5" Click="buttonClick_Operation"/>
+        <Button Content="-" x:Name="Button_Minus"  Grid.Column="5" Grid.Row="6" Background="#282bb5" Click="buttonClick_Operation"/>
+        <Button Content="×" x:Name="Button_Multi"  Grid.Column="6" Grid.Row="6" Background="#282bb5" Click="buttonClick_Operation"/>
+        <Button Content="÷" x:Name="Button_Div"    Grid.Column="7" Grid.Row="6" Background="#282bb5" Click="buttonClick_Operation"/>
+
+        <Button Content="C" x:Name="Button_Clear"  Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="2"  Background="#282bb5" Click="buttonClick_Clear"/>
+        <Button Content="⌫" x:Name="Button_Back"  Grid.Column="6" Grid.Row="5" Grid.ColumnSpan="2"  Background="#282bb5" Click="buttonClick_Back"/>
+
+        <Button Content="=" x:Name="Button_Equals"  Grid.Column="4" Grid.Row="3"  Grid.ColumnSpan="4" Grid.RowSpan="2" Background="#11111A" FontSize="60" Click="buttonClick_Equals"/>
+
+
+        <DockPanel Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="7">
+            <Border BorderBrush="#FFB4B4B4" Background="LightGray" BorderThickness="1" DockPanel.Dock="Top">
+                <StackPanel  Background="#FF1B1B1B">
+                    <Label  Foreground="White"  HorizontalAlignment="Right" FontSize="18" Opacity="0.65" >
+                        <Grid>
+                            <TextBlock  Text="" x:Name="label_main" HorizontalAlignment="Right"/>
+                        </Grid>
+                    </Label>
+                    <Label Content="" Foreground="White" x:Name="label_action" HorizontalAlignment="Right" FontSize="26" Opacity="0.85" />
+                    <Label Content="" Foreground="White" x:Name="label_score" HorizontalAlignment="Right" FontSize="26" Margin="0,70,6,0"/>
+
+                </StackPanel>
+            </Border>
+        </DockPanel>
+         
+    </Grid>
+</Window>

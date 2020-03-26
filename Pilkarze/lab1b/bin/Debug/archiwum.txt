@@ -1,0 +1,3 @@
+Nowak|Krzysztof|35|70
+Wilk|Marian|39|75
+Kwoll|Robert|22|67

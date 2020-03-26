@@ -1,0 +1,35 @@
+D:\Robert Kwoll\lab1b\lab1b\bin\Debug\lab1b.exe.config
+D:\Robert Kwoll\lab1b\lab1b\bin\Debug\lab1b.exe
+D:\Robert Kwoll\lab1b\lab1b\bin\Debug\lab1b.pdb
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\lab1b.csprojResolveAssemblyReference.cache
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\MainWindow.g.cs
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\App.g.cs
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\lab1b_MarkupCompile.cache
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\lab1b_MarkupCompile.lref
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\MainWindow.baml
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\lab1b.g.resources
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\lab1b.Properties.Resources.resources
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\lab1b.csproj.GenerateResource.Cache
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\lab1b.exe
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\lab1b.pdb
+C:\Users\Kwolik\Desktop\lab1b\lab1b\bin\Debug\lab1b.exe.config
+C:\Users\Kwolik\Desktop\lab1b\lab1b\bin\Debug\lab1b.exe
+C:\Users\Kwolik\Desktop\lab1b\lab1b\bin\Debug\lab1b.pdb
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\lab1b.csprojAssemblyReference.cache
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\MainWindow.g.cs
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\App.g.cs
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\lab1b_MarkupCompile.cache
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\lab1b_MarkupCompile.lref
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\MainWindow.baml
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\lab1b.g.resources
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\lab1b.Properties.Resources.resources
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\lab1b.csproj.GenerateResource.cache
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\lab1b.csproj.CoreCompileInputs.cache
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\lab1b.exe
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\lab1b.pdb
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\TextBoxWithErrorProvider.g.cs
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Robert Kwoll\lab1b\lab1b\obj\Debug\TextBoxWithErrorProvider.baml
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\TextBoxWithErrorProvider.g.cs
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kwolik\Desktop\lab1b\lab1b\obj\Debug\TextBoxWithErrorProvider.baml

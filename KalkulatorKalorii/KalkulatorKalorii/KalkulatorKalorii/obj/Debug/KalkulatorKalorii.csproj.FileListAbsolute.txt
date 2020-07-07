@@ -1,0 +1,88 @@
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csprojAssemblyReference.cache
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.DataBase.DB_Info.resources
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.Properties.Resources.resources
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.GenerateResource.cache
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CoreCompileInputs.cache
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe.config
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.pdb
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.dll
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.xml
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.View.resources
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CopyComplete
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.exe
+D:\Projekty\Programowanie IV\Kalkulator_Kalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.pdb
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe.config
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.pdb
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.dll
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.xml
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csprojAssemblyReference.cache
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.DataBase.DB_Info.resources
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.Properties.Resources.resources
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.View.resources
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.GenerateResource.cache
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CoreCompileInputs.cache
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CopyComplete
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.exe
+D:\Szkoła\Programowanie 4\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.pdb
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csprojAssemblyReference.cache
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.DataBase.DB_Info.resources
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.Properties.Resources.resources
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.View.resources
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.GenerateResource.cache
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CoreCompileInputs.cache
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.exe
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.pdb
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe.config
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.pdb
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.dll
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.xml
+C:\Users\Alien\Desktop\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CopyComplete
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe.config
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.pdb
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.dll
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.xml
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csprojAssemblyReference.cache
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.DataBase.DB_Info.resources
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.Properties.Resources.resources
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.View.resources
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.GenerateResource.cache
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CoreCompileInputs.cache
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CopyComplete
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.exe
+E:\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.pdb
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe.config
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.pdb
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.dll
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\Google.Protobuf.dll
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.xml
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csprojAssemblyReference.cache
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.DataBase.DB_Info.resources
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.Properties.Resources.resources
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.View.resources
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.GenerateResource.cache
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CoreCompileInputs.cache
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CopyComplete
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.exe
+C:\Users\Main\Downloads\programowanie4\programowanie4\Programowanie 4\kalorie\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.pdb
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe.config
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.pdb
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.dll
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\Google.Protobuf.dll
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.xml
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csprojAssemblyReference.cache
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.DataBase.DB_Info.resources
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.Properties.Resources.resources
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.View.resources
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.GenerateResource.cache
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CoreCompileInputs.cache
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CopyComplete
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.exe
+C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.pdb

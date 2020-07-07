@@ -63,6 +63,7 @@
             this.tluszczProduktu = new System.Windows.Forms.TextBox();
             this.nazwaProduktu = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -87,6 +88,8 @@
             this.masabmi = new System.Windows.Forms.TextBox();
             this.wzrostbmi = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -107,6 +110,8 @@
             this.masabmr = new System.Windows.Forms.TextBox();
             this.wzrostbmr = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label40 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.label39 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
@@ -136,11 +141,6 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label18 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -488,6 +488,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "BMI";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(175, 186);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 44);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Wczytaj z bazy";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // label24
             // 
             this.label24.AutoSize = true;
@@ -675,7 +685,7 @@
             this.ObliczBMI.TabIndex = 4;
             this.ObliczBMI.Text = "Oblicz";
             this.ObliczBMI.UseVisualStyleBackColor = false;
-            this.ObliczBMI.Click += new System.EventHandler(this.button4_Click);
+            this.ObliczBMI.Click += new System.EventHandler(this.ObliczBMI_Click);
             // 
             // label7
             // 
@@ -736,6 +746,25 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "BMR";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(22, 86);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(33, 13);
+            this.label20.TabIndex = 25;
+            this.label20.Text = "Płeć:";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.Location = new System.Drawing.Point(175, 233);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(119, 44);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Wczytaj z bazy";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -807,7 +836,7 @@
             // 
             this.wynikbmr.AutoSize = true;
             this.wynikbmr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.wynikbmr.Location = new System.Drawing.Point(186, 352);
+            this.wynikbmr.Location = new System.Drawing.Point(130, 354);
             this.wynikbmr.Name = "wynikbmr";
             this.wynikbmr.Size = new System.Drawing.Size(0, 16);
             this.wynikbmr.TabIndex = 11;
@@ -841,7 +870,7 @@
             this.ObliczBMR.TabIndex = 8;
             this.ObliczBMR.Text = "Oblicz";
             this.ObliczBMR.UseVisualStyleBackColor = true;
-            this.ObliczBMR.Click += new System.EventHandler(this.button7_Click);
+            this.ObliczBMR.Click += new System.EventHandler(this.ObliczBMR_Click);
             // 
             // label10
             // 
@@ -953,6 +982,25 @@
             this.tabPage4.Text = "Dzienne zapotrzebowanie";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(18, 85);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(33, 13);
+            this.label40.TabIndex = 26;
+            this.label40.Text = "Płeć:";
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button4.Location = new System.Drawing.Point(36, 338);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(119, 44);
+            this.button4.TabIndex = 24;
+            this.button4.Text = "Wczytaj z bazy";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // label39
             // 
             this.label39.AutoSize = true;
@@ -1058,7 +1106,7 @@
             this.ObliczZapotrzebowanie.TabIndex = 10;
             this.ObliczZapotrzebowanie.Text = "Oblicz";
             this.ObliczZapotrzebowanie.UseVisualStyleBackColor = true;
-            this.ObliczZapotrzebowanie.Click += new System.EventHandler(this.button9_Click);
+            this.ObliczZapotrzebowanie.Click += new System.EventHandler(this.ObliczZapotrzebowanie_Click);
             // 
             // label14
             // 
@@ -1242,54 +1290,6 @@
             this.button1.Text = "checkStatusDB";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.checkStatusDB_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(175, 186);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 44);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Wczytaj z bazy";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(175, 233);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 44);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "Wczytaj z bazy";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(36, 338);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 44);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "Wczytaj z bazy";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(22, 86);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(33, 13);
-            this.label20.TabIndex = 25;
-            this.label20.Text = "Płeć:";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(18, 85);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(33, 13);
-            this.label40.TabIndex = 26;
-            this.label40.Text = "Płeć:";
             // 
             // View
             // 

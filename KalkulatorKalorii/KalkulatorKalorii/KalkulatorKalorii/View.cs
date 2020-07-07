@@ -42,7 +42,7 @@ namespace KalkulatorKalorii
             loadComboBoxItems();
         }
 
-        private void checkStatusDB_Click(object sender, EventArgs e)
+        private void checkStatusDB_Click(object sender, EventArgs e)  //Polaczenie z baza danych
         {
             ProductRepository us = new ProductRepository();
             TypeRepository tp = new TypeRepository();
@@ -52,9 +52,9 @@ namespace KalkulatorKalorii
             
         }
 
-        private void loadComboBoxItems()
+        private void loadComboBoxItems()  
         {
-            wspolczynnikdz.DropDownStyle = ComboBoxStyle.DropDownList;
+            wspolczynnikdz.DropDownStyle = ComboBoxStyle.DropDownList; //wspolczynnik aktywnosci
             wspolczynnikdz.Items.Add("1.0 - leżący lub siedzący tryb życia, brak aktywności fizycznej");
             wspolczynnikdz.Items.Add("1.2 - praca siedząca, aktywność fizyczna na niskim poziomie");
             wspolczynnikdz.Items.Add("1.4 - praca nie fizyczna, trening 2 razy w tygodniu");
@@ -72,20 +72,19 @@ namespace KalkulatorKalorii
             comboBox2.SelectedIndex = 0;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ObliczBMI_Click(object sender, EventArgs e)  //Obliczanie BMI
         {
-            double masa = 0;
-            double wzrost = 0;
-            double wynik = 0;
+            double masa = 0, wzrost = 0, wynik = 0;
+
             bladbmi.Text = "";
             zakresmasabmi.Text = "";
             zakreswzrostbmi.Text = "";
             wynikbmi.Text = "";
+
             if (masabmi.Text != "" && wzrostbmi.Text != "")
             {
                 masa = Convert.ToDouble(masabmi.Text);
                 wzrost = Convert.ToDouble(wzrostbmi.Text);
-
                 double wysokosc = wzrost / 100;
 
                 if (masa > 30 && masa < 300 && wysokosc > 0.90 && wysokosc < 2.50)
@@ -93,62 +92,57 @@ namespace KalkulatorKalorii
                     wynik = masa / (wysokosc * wysokosc);
                     wynik = Math.Round(wynik, 2, MidpointRounding.AwayFromZero);
                     wynikbmi.Text = Convert.ToString(wynik);
+
                     if (wynik < 18.5)
                     {
                         opisbmi.Text = "Masz niedowagę!";
                     }
+
                     else if (wynik >= 18.5 && wynik < 25)
                     {
                         opisbmi.Text = "Wartość prawdiłowa";
                     }
+
                     else if (wynik >= 25 && wynik < 30)
                     {
                         opisbmi.Text = "Masz nadwagę!";
                     }
+
                     else if (wynik >= 30)
                     {
                         opisbmi.Text = "Otyłość!";
                     }
                 }
 
-                else
+                if (masa < 30.00 || masa > 300.00 || wysokosc < 0.90 || wysokosc > 2.50)
                 {
-                    if (masa < 30.00 || masa > 300.00)
-                    {
-                        bladbmi.Text = "Podano złą wartość!";
-                        zakresmasabmi.Text = "Zakres: (30 < masa < 300)";
-                        zakreswzrostbmi.Text = "Zakres: (0.90 < wzrost < 2.50)";
-                    }
-                    else if (wysokosc < 0.90 || wysokosc > 2.50)
-                    {
-                        bladbmi.Text = "Podano złą wartość!";
-                        zakresmasabmi.Text = "Zakres: (30 < masa < 300)";
-                        zakreswzrostbmi.Text = "Zakres: (0.90 < wzrost < 2.50)";
-                    }
-
+                    bladbmi.Text = "Podano złą wartość!";
+                    zakresmasabmi.Text = "Zakres: (30 < masa < 300)";
+                    zakreswzrostbmi.Text = "Zakres: (0.90 < wzrost < 2.50)";
                 }
             }
+
             else
             {
                 bladbmi.Text = "Wszystkie pola muszą być uzupełnione!";
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void ObliczBMR_Click(object sender, EventArgs e) //Obliczanie BMR
         {
-            double wzrost = 0;
-            double masa = 0;
-            double wiek = 0;
-            double wynik = 0;
+            double wzrost = 0, masa = 0, wiek = 0, wynik = 0;
+
             bladbmr.Text = "";
             zakresmasabmr.Text = "";
             zakreswzrostbmr.Text = "";
             wynikbmr.Text = "";
+
             if (masabmr.Text != "" && wzrostbmr.Text != "")
             {
                 wzrost = Convert.ToDouble(wzrostbmr.Text);
                 masa = Convert.ToDouble(masabmr.Text);
                 wiek = Convert.ToDouble(wiekbmr.Value);
+
                 if (masa > 30 && masa < 300 && wzrost > 90 && wzrost < 250)
                 {
 
@@ -156,53 +150,46 @@ namespace KalkulatorKalorii
                     {
                         wynik = (9.99 * masa) + (6.25 * wzrost) - (4.92 * wiek) - 161;
                         wynik = Math.Round(wynik, 2, MidpointRounding.AwayFromZero);
-                        wynikbmr.Text = Convert.ToString(wynik + " kcla");
+                        wynikbmr.Text = Convert.ToString(wynik + " kcal");
                     }
 
                     if (mezczyznabmr.Checked)
                     {
                         wynik = (9.99 * masa) + (6.25 * wzrost) - (4.92 * wiek) + 5;
                         wynik = Math.Round(wynik, 2, MidpointRounding.AwayFromZero);
-                        wynikbmr.Text = Convert.ToString(wynik + " kcla");
+                        wynikbmr.Text = Convert.ToString(wynik + " kcal");
                     }
                 }
-                else
+
+                if (masa < 30.00 || masa > 300.00 || wzrost < 90 || wzrost > 250)
                 {
-                    if (masa < 30.00 || masa > 300.00)
-                    {
-                        bladbmr.Text = "Podano złą wartość!";
-                        zakresmasabmr.Text = "Zakres: (30 < masa < 300)";
-                        zakreswzrostbmr.Text = "Zakres: (0.90 < wzrost < 2.50)";
-                    }
-                    else if (wzrost < 90 || wzrost > 250)
-                    {
-                        bladbmr.Text = "Podano złą wartość!";
-                        zakresmasabmr.Text = "Zakres: (30 < masa < 300)";
-                        zakreswzrostbmr.Text = "Zakres: (0.90 < wzrost < 2.50)";
-                    }
+                    bladbmr.Text = "Podano złą wartość!";
+                    zakresmasabmr.Text = "Zakres: (30 < masa < 300)";
+                    zakreswzrostbmr.Text = "Zakres: (0.90 < wzrost < 2.50)";
                 }
             }
+
             else
             {
                 bladbmr.Text = "Wszystkie pola muszą być uzupełnione!";
             }
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void ObliczZapotrzebowanie_Click(object sender, EventArgs e) //Oblicz Zapotrzebowanie kaloryczne
         {
-            double wzrost = 0;
-            double masa = 0;
-            double wiek = 0;
-            double wynik = 0;
+            double wzrost = 0, masa = 0, wiek = 0, wynik = 0;
+
             bladdz.Text = "";
             zakresmasadz.Text = "";
             zakreswzrostdz.Text = "";
             wynikdz.Text = "";
+
             if (masadz.Text != "" && wzrostdz.Text != "")
             {
                 wzrost = Convert.ToDouble(wzrostdz.Text);
                 masa = Convert.ToDouble(masadz.Text);
                 wiek = Convert.ToDouble(wiekdz.Value);
+
                 if (masa > 30 && masa < 300 && wzrost > 90 && wzrost < 250)
                 {
 
@@ -210,35 +197,41 @@ namespace KalkulatorKalorii
                     {
                         wynik = (9.99 * masa) + (6.25 * wzrost) - (4.92 * wiek) - 161;
                         wynik = Math.Round(wynik, 2, MidpointRounding.AwayFromZero);
+
                         if (wspolczynnikdz.SelectedIndex == 0)
                         {
                             wynik = wynik * 1.0;
-                            wynikdz.Text = Convert.ToString(wynik + " kcla");
+                            wynikdz.Text = Convert.ToString(wynik + " kcal");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 1)
                         {
                             wynik = wynik * 1.2;
-                            wynikdz.Text = Convert.ToString(wynik + " kcla");
+                            wynikdz.Text = Convert.ToString(wynik + " kcal");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 2)
                         {
                             wynik = wynik * 1.4;
-                            wynikdz.Text = Convert.ToString(wynik + " kcla");
+                            wynikdz.Text = Convert.ToString(wynik + " kcal");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 3)
                         {
                             wynik = wynik * 1.6;
-                            wynikdz.Text = Convert.ToString(wynik + " kcla");
+                            wynikdz.Text = Convert.ToString(wynik + " kcal");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 4)
                         {
                             wynik = wynik * 1.8;
-                            wynikdz.Text = Convert.ToString(wynik + " kcla");
+                            wynikdz.Text = Convert.ToString(wynik + " kcal");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 5)
                         {
                             wynik = wynik * 2.0;
-                            wynikdz.Text = Convert.ToString(wynik + " kcla");
+                            wynikdz.Text = Convert.ToString(wynik + " kcal");
                         }
                     }
 
@@ -246,31 +239,37 @@ namespace KalkulatorKalorii
                     {
                         wynik = (9.99 * masa) + (6.25 * wzrost) - (4.92 * wiek) + 5;
                         wynik = Math.Round(wynik, 2, MidpointRounding.AwayFromZero);
+
                         if (wspolczynnikdz.SelectedIndex == 0)
                         {
                             wynik = wynik * 1.0;
                             wynikdz.Text = Convert.ToString(wynik + " kcla");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 1)
                         {
                             wynik = wynik * 1.2;
                             wynikdz.Text = Convert.ToString(wynik + " kcla");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 2)
                         {
                             wynik = wynik * 1.4;
                             wynikdz.Text = Convert.ToString(wynik + " kcla");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 3)
                         {
                             wynik = wynik * 1.6;
                             wynikdz.Text = Convert.ToString(wynik + " kcla");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 4)
                         {
                             wynik = wynik * 1.8;
                             wynikdz.Text = Convert.ToString(wynik + " kcla");
                         }
+
                         else if (wspolczynnikdz.SelectedIndex == 5)
                         {
                             wynik = wynik * 2.0;
@@ -278,20 +277,12 @@ namespace KalkulatorKalorii
                         }
                     }
                 }
-                else
+
+                if (masa < 30.00 || masa > 300.00 || wzrost < 90 || wzrost > 250)
                 {
-                    if (masa < 30.00 || masa > 300.00)
-                    {
-                        bladdz.Text = "Podano złą wartość!";
-                        zakresmasadz.Text = "Zakres: (30 < masa < 300)";
-                        zakreswzrostdz.Text = "Zakres: (0.90 < wzrost < 2.50)";
-                    }
-                    else if (wzrost < 90 || wzrost > 250)
-                    {
-                        bladdz.Text = "Podano złą wartość!";
-                        zakresmasadz.Text = "Zakres: (30 < masa < 300)";
-                        zakreswzrostdz.Text = "Zakres: (0.90 < wzrost < 2.50)";
-                    }
+                    bladdz.Text = "Podano złą wartość!";
+                    zakresmasadz.Text = "Zakres: (30 < masa < 300)";
+                    zakreswzrostdz.Text = "Zakres: (0.90 < wzrost < 2.50)";
                 }
             }
             else
@@ -302,12 +293,7 @@ namespace KalkulatorKalorii
 
         private void ObliczProdukt_Click(object sender, EventArgs e)
         {
-            double tluszcz = 0.0;
-            double bialko = 0.0;
-            double weglowodany = 0.0;
-            double waga = 0.0;
-            double sumaKalorii = 0.0;
-
+            double tluszcz = 0.0, bialko = 0.0, weglowodany = 0.0, waga = 0.0, sumaKalorii = 0.0;
             kalorieProduktu.Text = "";
 
             if (tluszczProduktu.Text != ""  && bialkoProduktu.Text != "" && weglowodanyProduktu.Text != "" && wagaProduktu.Text != "")
@@ -318,17 +304,20 @@ namespace KalkulatorKalorii
                 waga = Convert.ToDouble(wagaProduktu.Text);
 
                 double mnoznik = waga / 100;
-                if(tluszcz > 0 && bialko >0 && weglowodany >0 && waga > 0)
+
+                if (tluszcz > 0 && bialko > 0 && weglowodany > 0 && waga > 0)
                 {
                     sumaKalorii = (tluszcz * 7 + bialko * 4 + weglowodany * 4) * mnoznik;
 
                     kalorieProduktu.Text = Convert.ToString(sumaKalorii);
                 }
+
                 else
                 {
                     bladProdukty.Text = "Podaj odpowiednie wartości!";
                 }
             }
+
             else
             {
                 bladProdukty.Text = "Wszystkie pola muszą być uzupełnione!";
@@ -342,12 +331,7 @@ namespace KalkulatorKalorii
 
         private void DodajDoListyProdukt_Click(object sender, EventArgs e)
         {
-            double tluszcz = 0.0;
-            double bialko = 0.0;
-            double weglowodany = 0.0;
-            double waga = 0.0;
-            double sumaKalorii = 0.0;
-
+            double tluszcz = 0.0, bialko = 0.0, weglowodany = 0.0, waga = 0.0, sumaKalorii = 0.0;
             kalorieProduktu.Text = "";
 
             if (tluszczProduktu.Text != "" && bialkoProduktu.Text != "" && weglowodanyProduktu.Text != "" && wagaProduktu.Text != "")
@@ -364,15 +348,18 @@ namespace KalkulatorKalorii
 
                     kalorieProduktu.Text = Convert.ToString(sumaKalorii);
                 }
+
                 else
                 {
                     bladProdukty.Text = "Podaj odpowiednie wartości!";
                 }
             }
+
             else
             {
                 bladProdukty.Text = "Wszystkie pola muszą być uzupełnione!";
             }
+
             if (tluszczProduktu.Text != "" && bialkoProduktu.Text != "" && weglowodanyProduktu.Text != "" && wagaProduktu.Text != "")
             {
                 string[] rowListView1 = { nazwaProduktu.Text, tluszczProduktu.Text, bialkoProduktu.Text, weglowodanyProduktu.Text, kalorieProduktu.Text };
@@ -412,7 +399,7 @@ namespace KalkulatorKalorii
             }
             else
             {
-                MessageBox.Show("Brak wybranych elementów!", "Bład");
+                MessageBox.Show("Brak wybranych elementów!", "Błąd");
             }
 
             suma_Tluszczu -= Convert.ToDouble(tluszczProduktu.Text);

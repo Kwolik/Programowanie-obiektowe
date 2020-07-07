@@ -1237,7 +1237,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(412, 102);
             this.label17.TabIndex = 2;
-            this.label17.Text = "Matematyka Stosowana   \r\nkierunek: Informatyka\r\nSemestr IV   Grupa 1C i 2F";
+            this.label17.Text = "Matematyka Stosowana   \r\nkierunek: Informatyka\r\nSemestr IV   Grupa 1B i 2F";
             // 
             // label16
             // 

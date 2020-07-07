@@ -33,6 +33,7 @@ namespace KalkulatorKalorii.DataBase
                 }
                 connection.Close();
             }
+
             foreach (var u in products)
             {
                 Console.WriteLine(u);

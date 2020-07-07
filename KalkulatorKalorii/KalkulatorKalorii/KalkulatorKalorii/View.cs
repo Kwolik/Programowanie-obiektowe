@@ -65,7 +65,7 @@ namespace KalkulatorKalorii
 
             comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox2.Items.Add("Śniadanie");
-            comboBox2.Items.Add("Lunch");
+            comboBox2.Items.Add("Drugie Śniadanie");
             comboBox2.Items.Add("Obiad");
             comboBox2.Items.Add("Podwieczorek");
             comboBox2.Items.Add("Kolacja");
@@ -354,7 +354,8 @@ namespace KalkulatorKalorii
                     bladProdukty.Text = "Podaj odpowiednie wartości!";
                 }
             }
-
+            //DODAC CLEARA BO MOZNA DODAC KILKA RAZY DO LISTY TO SAMO
+            //BMI TEZ POPRAWIC CZYSZCZENIE
             else
             {
                 bladProdukty.Text = "Wszystkie pola muszą być uzupełnione!";

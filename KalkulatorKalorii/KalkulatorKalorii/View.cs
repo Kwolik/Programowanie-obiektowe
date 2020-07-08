@@ -118,6 +118,7 @@ namespace KalkulatorKalorii
 
                if (masa < 30.00 || masa > 300.00 || wysokosc < 0.90 || wysokosc > 2.50)
                {
+                    opisbmi.Text = "";
                     bladbmi.Text = "Podano złą wartość!";
                     zakresmasabmi.Text = "Zakres: (30 < masa < 300)";
                     zakreswzrostbmi.Text = "Zakres: (0.90 < wzrost < 2.50)";
@@ -127,6 +128,7 @@ namespace KalkulatorKalorii
                 
             else
             {
+                opisbmi.Text = "";
                 bladbmi.Text = "Wszystkie pola muszą być uzupełnione!";
             }
         } 
@@ -162,14 +164,14 @@ namespace KalkulatorKalorii
                     {
                         if (obliczBMRkobieta != null)
                             obliczBMRkobieta(masa, wzrost, wiek);
-                        wynikbmr.Text = Convert.ToString(wynik + " kcla");                         
+                        wynikbmr.Text = Convert.ToString(wynik + " kcal");                         
                     }
 
                     if (mezczyznabmr.Checked)
                     {
                         if (obliczBMRmezczyzna != null)
                             obliczBMRmezczyzna(masa, wzrost, wiek);
-                        wynikbmr.Text = Convert.ToString(wynik + " kcla");
+                        wynikbmr.Text = Convert.ToString(wynik + " kcal");
                     }
                 }
 
@@ -217,7 +219,7 @@ namespace KalkulatorKalorii
                     {
                         if (zapotrzebowaniek != null)
                             zapotrzebowaniek(masa, wzrost, wiek,wspl);
-                        wynikdz.Text = Convert.ToString(wynik);
+                        wynikdz.Text = Convert.ToString(wynik + " kcal");
                         
                     }
 
@@ -225,7 +227,7 @@ namespace KalkulatorKalorii
                     {
                         if (zapotrzebowaniem != null)
                             zapotrzebowaniem(masa, wzrost, wiek, wspl);
-                        wynikdz.Text = Convert.ToString(wynik);
+                        wynikdz.Text = Convert.ToString(wynik + " kcal");
                     }
                 }
 
@@ -295,7 +297,8 @@ namespace KalkulatorKalorii
 
             if (tluszczProduktu.Text != "" && bialkoProduktu.Text != "" && weglowodanyProduktu.Text != "" && wagaProduktu.Text != "")
             {
-                try { 
+                try
+                {
                     tluszcz = Convert.ToDouble(tluszczProduktu.Text);
                     bialko = Convert.ToDouble(bialkoProduktu.Text);
                     weglowodany = Convert.ToDouble(weglowodanyProduktu.Text);
@@ -305,7 +308,7 @@ namespace KalkulatorKalorii
                 {
                     Console.WriteLine(fEx);
                 }
-            double mnoznik = waga / 100;
+                double mnoznik = waga / 100;
                 if (tluszcz > 0 && bialko > 0 && weglowodany > 0 && waga > 0)
                 {
 
@@ -313,6 +316,10 @@ namespace KalkulatorKalorii
                         LiczenieKaloriiProduktu(tluszcz, bialko, weglowodany, waga);
 
                     kalorieProduktu.Text = Convert.ToString(wynik);
+
+                    string[] rowListView1 = { nazwaProduktu.Text, tluszczProduktu.Text, bialkoProduktu.Text, weglowodanyProduktu.Text, kalorieProduktu.Text };
+                    var listView1Item = new ListViewItem(rowListView1);
+                    listView1.Items.Add(listView1Item);
 
                 }
                 else
@@ -325,27 +332,24 @@ namespace KalkulatorKalorii
                 bladProdukty.Text = "Wszystkie pola muszą być uzupełnione!";
             }
 
-            string[] rowListView1 = { nazwaProduktu.Text, tluszczProduktu.Text, bialkoProduktu.Text, weglowodanyProduktu.Text, kalorieProduktu.Text };
-            var listView1Item = new ListViewItem(rowListView1);
-            listView1.Items.Add(listView1Item);
-
             if (tluszczProduktu.Text != "" && bialkoProduktu.Text != "" && weglowodanyProduktu.Text != "" && wagaProduktu.Text != "")
             {
                 suma_Tluszczu += Convert.ToDouble(tluszczProduktu.Text);
                 suma_Bialka += Convert.ToDouble(bialkoProduktu.Text);
                 suma_Weglowodanow += Convert.ToDouble(weglowodanyProduktu.Text);
                 suma_Kalorii += Convert.ToDouble(kalorieProduktu.Text);
+
+                string[] rowListView2 = { nazwaProduktu.Text, Convert.ToString(suma_Tluszczu), Convert.ToString(suma_Bialka), Convert.ToString(suma_Weglowodanow), Convert.ToString(suma_Kalorii) };
+                var listView2Item = new ListViewItem(rowListView2);
+
+                if (listView2.Items.Count > 0)
+                {
+                    listView2.Items[0].Remove();
+                }
+
+                listView2.Items.Add(listView2Item);
             }
 
-            string[] rowListView2 = { nazwaProduktu.Text, Convert.ToString(suma_Tluszczu), Convert.ToString(suma_Bialka), Convert.ToString(suma_Weglowodanow), Convert.ToString(suma_Kalorii) };
-            var listView2Item = new ListViewItem(rowListView2);
-
-            if (listView2.Items.Count > 0)
-            {
-                listView2.Items[0].Remove();
-            }
-
-            listView2.Items.Add(listView2Item);
         }
 
         private void UsunZListyProdukt_Click(object sender, EventArgs e)

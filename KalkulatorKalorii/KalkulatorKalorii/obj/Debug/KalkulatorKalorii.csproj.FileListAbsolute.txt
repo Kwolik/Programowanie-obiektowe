@@ -82,3 +82,17 @@ C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\obj\Debu
 C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CopyComplete
 C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.exe
 C:\Users\Kwolik\Desktop\Nowy_folder\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.pdb
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe.config
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.exe
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\KalkulatorKalorii.pdb
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.dll
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\bin\Debug\MySql.Data.xml
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csprojAssemblyReference.cache
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.DataBase.DB_Info.resources
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.Properties.Resources.resources
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.View.resources
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.GenerateResource.cache
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CoreCompileInputs.cache
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.csproj.CopyComplete
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.exe
+C:\Users\Kwolik\Desktop\KalkulatorKalorii\KalkulatorKalorii\obj\Debug\KalkulatorKalorii.pdb

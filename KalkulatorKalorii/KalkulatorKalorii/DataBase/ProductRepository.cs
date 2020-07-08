@@ -12,17 +12,19 @@ namespace KalkulatorKalorii.DataBase
         #region queries
 
         private static string SELECT_PRODUCT = "SELECT * FROM produkty p, wartosci_odzywcze w_o WHERE p.id_produktu = w_o.id_wartosci AND p.nazwa LIKE CONCAT('%',@Produkt,'%')";
-        private static string SELECT_PRODUCTS = "SELECT p.id_produktu ID, p.nazwa Nazwa, w.kcal Kalorie, w.bialko Bialka, w.tluszcz Tluszcze, w.weglowodany Weglowodany, t.nazwa_typu Typ FROM `produkty` p, `produkty-wartosci` pw, wartosci_odzywcze w, `produkty-typ` pt,typ t  WHERE p.id_produktu = pw.id_produktu AND pw.id_wartosci = w.id_wartosci AND p.id_produktu = pt.id_produktu AND pt.id_typu = t.id_typu ORDER BY 1 ASC";
+        private static string SELECT_PRODUCTS = "SELECT p.nazwa Nazwa, w.kcal Kalorie, w.bialko Bialka, w.tluszcz Tluszcze, w.weglowodany Weglowodany FROM `produkty` p, `produkty-wartosci` pw, wartosci_odzywcze w  WHERE p.id_produktu = pw.id_produktu AND pw.id_wartosci = w.id_wartosci ORDER BY 1 ASC";
 
         private static string ADD_PRODUCT_PRODUKTY = "INSERT INTO produkty (nazwa) values (@NazwaProduktu)";
         private static string ADD_PRODUCT_WARTOSCI = "INSERT INTO wartosci_odzywcze (kcal,bialko,weglowodany,tluszcz) values (@Kalorie,@Bialko, @Weglowodany, @Tluszcze)";
+        private static string ADD_PRODUCT_DANE = "INSERT INTO `produkty-wartosci` (id_produktu,id_wartosci) values (@KIDproduktu,@IDwartosci)";
+        private static string WARTOSC_PRODUKTY = "SELECT id_produktu FROM produkty ORDER BY 1 DESC LIMIT 1";
+        private static string WARTOSC_WARTOSCI = "SELECT id_wartosci FROM wartosci_odzywcze ORDER BY 1 DESC LIMIT 1";
 
         #endregion
 
         private static MySqlConnection connection = DB_Connect.Instance.Connection;
 
-
-        public string getProduct(string produkt)
+            public string getProduct(string produkt)
         {
             string nazwaKoncowa = "";
             string Nazwa = "";
@@ -73,6 +75,44 @@ namespace KalkulatorKalorii.DataBase
                 command.Parameters.AddWithValue("@Bialko", bialko);
                 command.Parameters.AddWithValue("@Weglowodany", weglowodany);
                 command.Parameters.AddWithValue("@Tluszcze", tluszcze);
+                command.ExecuteNonQuery();
+
+                connection.Close();
+            }
+
+            var IDproduktu = 0;
+            var IDwartosci = 0;
+
+            using (MySqlCommand command = new MySqlCommand(WARTOSC_PRODUKTY, connection))
+            {
+                connection.Open();
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    IDproduktu = (int)reader["id_produktu"];
+                }
+                connection.Close();
+            }
+
+            using (MySqlCommand command = new MySqlCommand(WARTOSC_WARTOSCI, connection))
+            {
+                connection.Open();
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    IDwartosci = (int)reader["id_wartosci"];
+                }
+                connection.Close();
+            }
+
+            using (MySqlCommand command = new MySqlCommand(ADD_PRODUCT_DANE, connection))
+            {
+                connection.Open();
+
+                command.Parameters.AddWithValue("@KIDproduktu", IDproduktu);
+                command.Parameters.AddWithValue("@IDwartosci", IDwartosci);
                 command.ExecuteNonQuery();
 
                 connection.Close();

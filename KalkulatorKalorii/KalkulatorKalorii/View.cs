@@ -407,6 +407,8 @@ namespace KalkulatorKalorii
             {
                 ProductRepository us = new ProductRepository();
                 us.addProduct(nazwaProduktu.Text.ToString(), Convert.ToDouble(bialkoProduktu.Text) * 4 + Convert.ToDouble(weglowodanyProduktu.Text) * 4 + Convert.ToDouble(tluszczProduktu.Text) * 7, Convert.ToDouble(bialkoProduktu.Text), Convert.ToDouble(weglowodanyProduktu.Text), Convert.ToDouble(tluszczProduktu.Text));
+                listView3.Items.Clear();
+                ZaladujDoListy();
             }
         }
 

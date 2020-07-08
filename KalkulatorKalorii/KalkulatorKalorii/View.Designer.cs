@@ -31,6 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label25 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -134,12 +140,6 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.listView3 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -201,11 +201,56 @@
             this.tabPage1.Text = "Kalorie produktu";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // listView3
+            // 
+            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
+            this.listView3.HideSelection = false;
+            this.listView3.Location = new System.Drawing.Point(386, 220);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(364, 177);
+            this.listView3.TabIndex = 28;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            this.listView3.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nazwa";
+            this.columnHeader1.Width = 125;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tłuszcz";
+            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader2.Width = 51;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Białko";
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.Width = 49;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Węglowodany";
+            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader4.Width = 82;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "KCAL";
+            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader5.Width = 51;
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label25.Location = new System.Drawing.Point(491, 202);
+            this.label25.Location = new System.Drawing.Point(482, 202);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(174, 17);
             this.label25.TabIndex = 27;
@@ -225,11 +270,11 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label41.Location = new System.Drawing.Point(478, 2);
+            this.label41.Location = new System.Drawing.Point(520, 2);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(197, 17);
+            this.label41.Size = new System.Drawing.Size(122, 17);
             this.label41.TabIndex = 25;
-            this.label41.Text = "Lista produktów nie dziala";
+            this.label41.Text = "Lista produktów";
             // 
             // DodajDoBazy
             // 
@@ -257,7 +302,7 @@
             // 
             this.bladProdukty.AutoSize = true;
             this.bladProdukty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bladProdukty.Location = new System.Drawing.Point(20, 24);
+            this.bladProdukty.Location = new System.Drawing.Point(15, 82);
             this.bladProdukty.Name = "bladProdukty";
             this.bladProdukty.Size = new System.Drawing.Size(0, 16);
             this.bladProdukty.TabIndex = 22;
@@ -346,7 +391,7 @@
             this.węglowodany2,
             this.suma_kcal});
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(5, 24);
+            this.listView2.Location = new System.Drawing.Point(6, 22);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(364, 47);
             this.listView2.TabIndex = 16;
@@ -684,7 +729,7 @@
             this.ObliczBMI.TabIndex = 4;
             this.ObliczBMI.Text = "Oblicz";
             this.ObliczBMI.UseVisualStyleBackColor = true;
-            this.ObliczBMI.Click += new System.EventHandler(this.button4_Click);
+            this.ObliczBMI.Click += new System.EventHandler(this.ObliczBMI_Click);
             // 
             // label7
             // 
@@ -846,7 +891,7 @@
             this.ObliczBMR.TabIndex = 8;
             this.ObliczBMR.Text = "Oblicz";
             this.ObliczBMR.UseVisualStyleBackColor = true;
-            this.ObliczBMR.Click += new System.EventHandler(this.button7_Click);
+            this.ObliczBMR.Click += new System.EventHandler(this.ObliczBMR_Click);
             // 
             // label10
             // 
@@ -887,7 +932,7 @@
             this.wiekbmr.Size = new System.Drawing.Size(120, 20);
             this.wiekbmr.TabIndex = 4;
             this.wiekbmr.Value = new decimal(new int[] {
-            18,
+            20,
             0,
             0,
             0});
@@ -1059,43 +1104,43 @@
             this.ObliczZapotrzebowanie.TabIndex = 10;
             this.ObliczZapotrzebowanie.Text = "Oblicz";
             this.ObliczZapotrzebowanie.UseVisualStyleBackColor = true;
-            this.ObliczZapotrzebowanie.Click += new System.EventHandler(this.button9_Click);
+            this.ObliczZapotrzebowanie.Click += new System.EventHandler(this.ObliczZapotrzebowanie_Click);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(13, 243);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(131, 13);
+            this.label14.Size = new System.Drawing.Size(134, 13);
             this.label14.TabIndex = 9;
-            this.label14.Text = "Współczynnik aktywności";
+            this.label14.Text = "Współczynnik aktywności:";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(13, 207);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 13);
+            this.label13.Size = new System.Drawing.Size(35, 13);
             this.label13.TabIndex = 8;
-            this.label13.Text = "Wiek";
+            this.label13.Text = "Wiek:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(13, 172);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 13);
+            this.label12.Size = new System.Drawing.Size(60, 13);
             this.label12.TabIndex = 7;
-            this.label12.Text = "Waga [kg]";
+            this.label12.Text = "Waga [kg]:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(13, 136);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(63, 13);
+            this.label11.Size = new System.Drawing.Size(66, 13);
             this.label11.TabIndex = 6;
-            this.label11.Text = "Wzrost [cm]";
+            this.label11.Text = "Wzrost [cm]:";
             // 
             // wspolczynnikdz
             // 
@@ -1117,7 +1162,7 @@
             this.wiekdz.Size = new System.Drawing.Size(120, 20);
             this.wiekdz.TabIndex = 4;
             this.wiekdz.Value = new decimal(new int[] {
-            18,
+            20,
             0,
             0,
             0});
@@ -1211,51 +1256,6 @@
             this.label16.Size = new System.Drawing.Size(264, 34);
             this.label16.TabIndex = 1;
             this.label16.Text = "Kalkulator Kalorii";
-            // 
-            // listView3
-            // 
-            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(386, 220);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(364, 177);
-            this.listView3.TabIndex = 28;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Nazwa";
-            this.columnHeader1.Width = 125;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Tłuszcz";
-            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 51;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Białko";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 49;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Węglowodany";
-            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader4.Width = 82;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "KCAL";
-            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader5.Width = 51;
             // 
             // View
             // 
